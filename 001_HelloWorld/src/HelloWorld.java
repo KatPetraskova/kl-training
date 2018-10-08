@@ -3,6 +3,5 @@ public class HelloWorld {
 
         /* My first Java = komentar */
         System.out.println("Hello World!");
-
     }
 }

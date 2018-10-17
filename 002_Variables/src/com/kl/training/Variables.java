@@ -122,5 +122,49 @@ public class Variables {
 
         int a = 1;
         Integer b = 2; // je to objekt, tzn. referencni dat.typ
+
+        double [] myDoubleArray = {10., 0.00};
+
+        // System.out.println ("Hodnota prvniho prvku pole myDoubleArray: " + myDoubleArray [1]);
+
+        float [] myFloatArray = new float[0];
+        float [] myFloatArray2 = {};
+        float [] myFloatArray3 = new float[5];
+            myFloatArray3[0] = 12.1F;
+            myFloatArray3[1] = 14F;
+            myFloatArray3[2] = 22F;
+            myFloatArray3[3] = 34F;
+            myFloatArray3[4] = 99F;
+
+        /* vypsani prvku pole myFloatArray do konzole */
+        /* System.out.println ("Hodnota pole myFloatArray3: " + myFloatArray3[0] + ", " + myFloatArray3[1] + ", " +
+                myFloatArray3[2] + ", " +  myFloatArray3[3]+ ", "  + myFloatArray3[4]); */
+
+        /* Vylet duchodcu z Albertova na Prazsky hrad */
+        String[] autobus1 = {"Vera", "Kveta", "Franta", "Josef"};
+        String[] autobus2 = new String[3];
+            autobus2[0] = "Spytihnev";
+            // autobus2[1] = "";  lze tento prazdny prvek vynechat a hodnota bude null
+            autobus2[2] = "Mojmir";
+
+        // System.out.println ("Jmeno duchodce, ktery mel sedet na druhem miste: " + autobus2[1]);
+
+        /* OBJEKTY - reprezentuji prvky realneho sveta (clovek, auto, pes atd.)
+        *   - maji obecne nějake vlastnosti - pr. pes - velky, cerny apod.
+        *   - maji i metody - nekouse, steka, ... */
+
+        /* Tvorba objektu */
+        Dog pes1 = new Dog("Hafik", "hneda", "doga", 130.1);
+
+        /* Zmena instancni promenne */
+        pes1.jmeno = "Fik";
+        System.out.println(pes1.jmeno);
+
+        /* Volani metody objektu */
+        pes1.bark();
+
+        /* Pocet nohou - staticka promenna */
+        System.out.println("Pocet nohou: " + pes1.pocetKoncetin);
+
     }
 }

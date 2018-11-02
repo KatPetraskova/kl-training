@@ -17,15 +17,36 @@ public class Variables {
 
         /* Vylet materske skolky do ZOO */
 
-    String[] mhd = new String[5];
+        /*
+        String[] mhd = new String[5];
 
-    mhd[0] = "paní učitelka";
-    mhd[1] = "Honzík";
-    mhd[2] = "Vašík";
-    mhd[3] = "Lenka";
-    mhd[4] = "Mája";
+        mhd[0] = "paní učitelka";
+        mhd[1] = "Honzík";
+        mhd[2] = "Vašík";
+        mhd[3] = "Lenka";
+        mhd[4] = "Mája";
 
-    System.out.println ("Jméno dítěte na posledním místě: " + mhd[4]);
+        System.out.println ("Jméno dítěte na posledním místě: " + mhd[4]);
 
-}
+        */
+
+        /* Prvni objekt - Morce 1 */
+        Morce morce1 = new Morce("cerna","hladka", "Mysak","samec", 500);
+
+        /* Druhy objekt - Morce 2 */
+        Morce morce2 = new Morce ("cernobila", "kudrnatá", "Pipikos", "samec", 550);
+
+        System.out.println("Mysak");
+        morce1.popcorning();
+        morce1.piskani();
+        morce1.zrani();
+
+        System.out.println("Pipikos");
+        morce2.popcorning();
+        morce2.piskani();
+        morce2.zrani();
+
+
+
+    }
 }
